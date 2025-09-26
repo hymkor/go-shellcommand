@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/zetamatta/go-shellcommand"
+	"github.com/hymkor/go-shellcommand"
 )
 
 func TestSystem(t *testing.T) {
