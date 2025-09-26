@@ -1,3 +1,3 @@
-module github.com/zetamatta/go-shellcommand
+module github.com/hymkor/go-shellcommand
 
 go 1.17
