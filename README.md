@@ -4,13 +4,21 @@ go-shellcommand
 go-shellcommand is the package providing the function `System` like
 the one of the programming language C.
 
-```go
-process, err := shellcommand.System(fmt.Sprintf(`echo "ahaha" > "%s"`, workpath))
-if err != nil {
-    t.Fatal(err.Error())
-    return
+```example.go
+package main
+
+import (
+    "github.com/hymkor/go-shellcommand"
+)
+
+func main() {
+    process, err := shellcommand.System(`echo "ahaha" > "test"`)
+    if err != nil {
+        println(err.Error())
+        return
+    }
+    process.Wait()
 }
-process.Wait()
 ```
 
 It supports these environments.
